@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV paskaita</title>
+    <style>
+        body{
+            max-width:1920px;
+            margin: auto;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Javascript pirma paskaita</h1>
+    <p>Sia paskaitapradesime Javascript pradmenis</p>
+    <p class="keiciamas-turinys">Cia keiciamas turinys</p>
+
+
+    <script>
+        'use strict';
+        //pasirinkome elementa
+       //document.querySelector(".keiciamas-turinys").innerHTML = "Sekmingai pakeiciau p elemento teksta";
+       // console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+        //document.querySelector(".keiciamas-turinys").innerHTML = "Antra karta pakeistas tekstas";
+        //console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+        //pasirinkta elementa isvedame i konsole
+        //console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+        //Kintamieji
+        //Kintamasis - isskirta vieta kompiuterio atmintyje, kurioje mes saugome informacija
+        var kintamasis1;// kintamojo deklaravimas
+        kintamasis1 = 5; // kintamojo priskirimas
+        console.log(kintamasis1); //kintamojo ivedimas
+
+        var kintamasis2
+        kintamasis2 = "Kintmasis saugo teksta"; // sting - tekstine eilute (gali buti ir su viengubom ir su dvigubom kabutem)
+        console.log(kintamasis2);
+
+        var kintamasis3
+        kintamasis3 = 'Kintmasis saugo teksta';
+        console.log(kintamasis3);
+
+        var kintamasis4
+        kintamasis4 = 'Knyga "Altoriu seselyje" ';
+        console.log(kintamasis4);
+
+        var kintamasis5
+        kintamasis5 = "Knyga 'Altoriu seselyje' ";
+        console.log(kintamasis5);
+
+        var kintamasis6
+        kintamasis6 = 6.5;
+        console.log(kintamasis6);
+
+        //Tiesa, melas
+        var tiesa;
+        tiesa = true;
+        var melas
+        melas = false;
+        console.log(tiesa);
+        console.log(melas);
+
+        var testinis;
+        testinis = 5; 
+        console.log(testinis); 
+
+        //Dvieju skaitmenu suma
+
+        var a,b,suma ; // a kintamasis ir b kintamasis
+        a = 10;
+        b = a;
+        suma = a + b;
+        console.log("dvieju skaitmenu suma")
+        console.log(suma);
+
+        //Dvieju skaitmenu skirtumas
+        var skirtumas, sk1, sk2;
+        sk1 = 1;
+        sk2 = 15; 
+        skirtumas = sk1 - sk2;
+        console.log("dvieju skaitmenu skirtumas")
+        console.log(skirtumas);
+
+        //Dvieju skaitmenu daugyba
+        var daugyba;
+        daugyba = sk1 * sk2;
+        console.log("dvieju skaitmenu daugyba")
+        console.log(daugyba);
+
+        //Dvieju skaitmenu dalyba
+        var dalyba;
+        dalyba = suma / skirtumas;  
+        console.log("dvieju skaitmenu dalyba")
+        console.log(dalyba); // -1.4285....,   PHP = -1
+
+        var dalybaSveikaisSkaiciais;
+        sk1 = 20;
+        sk2 = 6;
+        dalybaSveikaisSkaiciais = parseInt(sk1 / sk2);  
+        console.log("dvieju skaitmenu dalyba sveikais skaiciais")
+        console.log(dalybaSveikaisSkaiciais); 
+
+        var liekana;
+        liekana = sk1 % sk2; //20%6=1
+        console.log("dvieju skaitmenu dalybos liekana");
+        console.log(liekana);
+
+        var k1, k2, k3, k4;
+        k1 = 157;
+        k2 = 48;
+        k3 = 103;
+        k4 = 10248986413;
+
+        var l1, l2, l3, l4;
+
+        l1 = k1 % 2;
+        l2 = k2 % 2;
+        l3 = k3 % 2;
+        l4 = k2 % 2;
+
+        //kelimas laipsniu
+        var kelimas;
+        kelimas = sk1 ** 5;
+        //arba
+        // kelimas=Math.pow(sk1, 5)
+        console.log("Skaitmens kelimas n tuoju laipsniu");
+        console.log(kelimas);
+
+         //saknis  2
+         var saknis;
+        //saknis = kelimas ** (1/3);
+        saknis = Math.sqrt(kelimas); //kvadratine saknis
+
+        console.log("Skaitmens saknies traukimas n tuoju laipsniu");
+        console.log(saknis);
+
+        var i = 1024;
+        i++;
+
+        console.log(i); //????1025)
+
+        i--;
+        console.log(i); // ????? 1024
+
+        i++;
+
+        console.log(i); 
+
+        i--;
+        console.log(i); 
+
+        var naujaSuma;
+        naujaSuma = 5 + 4 * 9;
+
+        console.log(naujaSuma);
+
+        var rez;
+        rez = 5 / 4 * 3;
+        console.log(rez);
+
+        var saknisN
+        saknisN = Math.sqrt(-8);
+
+        var dalybaN
+        dalybaN= 8 / 0;
+        console.log(saknisN);
+        console.log(dalybaN);
+
+
+        var tekstas = "as esu tekstas";
+        var skaicius1 = -5;
+
+        var duKintamieji = tekstas + skaicius1;
+
+        console.log(duKintamieji);
+        console.log("Dalyba is nulio: " + dalybaN);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
